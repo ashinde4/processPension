@@ -23,7 +23,7 @@ phases:
       - echo $(docker images)
       - docker push 860061945305.dkr.ecr.us-west-2.amazonaws.com/asbackend:authorization-service:authorization-service
       - echo Writing definition files
-      - printf '[{"name":"authorization-service","imageUri":"%s"}]' 860061945305.dkr.ecr.us-west-2.amazonaws.com/asbackend:authorization-service:authorization-service > taskdefinition.json
+      - printf '[{"name":"authorization-service","imageUri":"%s"}]' 860061945305.dkr.ecr.us-west-2.amazonaws.com/asbackend:authorization-service > taskdefinition.json
 
 artifacts:
   files: taskdefinition.json
