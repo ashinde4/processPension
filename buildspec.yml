@@ -15,7 +15,7 @@ phases:
       - echo Building java
       - mvn clean package
       - echo Building the docker image
-      - docker build -t authorization-service .
+      - docker build -t processPension.
       - docker tag authorization-service 860061945305.dkr.ecr.us-west-2.amazonaws.com/asprocesspension:processPension
   post_build:
     commands:
